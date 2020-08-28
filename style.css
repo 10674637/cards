@@ -33,3 +33,7 @@ header,
 .wave{
 transform: rotate(90deg);
 }
+.card-image{
+  height: 667px;
+  width: 375px;
+}
