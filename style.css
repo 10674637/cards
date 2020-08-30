@@ -1,39 +1,18 @@
-HTML
-CSS
-JavaScript
-html,
-body,
-header,
-.view {
-  height: 100%;
-}
 
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
-}
-
-.top-nav-collapse {
-  background-color: #e2b076 !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #1d173a !important;
-  }
-}
-.wave{
-transform: rotate(90deg);
-}
 .card-image{
-  height: 667px;
-  width: 375px;
+  height: 100vh;
+}
+
+.icon{
+  width: 6rem;
+  height: 9rem;
+  /* background: lightblue; */
+}
+
+.icon span{
+  font-size: 80px;
+}
+
+.icon.wave {
+  transform: rotate(90deg);
 }

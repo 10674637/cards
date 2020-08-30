@@ -1,60 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>  
+<link rel="stylesheet" href="style.css">   
+<script src="script.js"></script>
 
-    <title>Hello, world!</title> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
+<title>Mind Reading App!</title> 
+</head>
+<body>
 <!-- Card -->
-<div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');">
-
-  <!-- Content -->
-  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-    <div>
-      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Welcome To</h5>
-      <h3 class="card-title pt-2 message"><strong>Mind reading app</strong></h3>
-
-        <div class="card-group">
-            <div class="card">
-              <div class="card-body">
-                <a class="btn btn-light"><i class="far fa-clone left"></i> hidden card </a>
-                
-              </div>
-              <div class="card-footer">
-                <small class="text-muted square">🞑 </small>
-                <small class="text-muted cross">➕ </small>
-                <small class="text-muted star">★</small>
-                <small class="text-muted circle">🞅</small>
-                <small class="text-muted wave" data-fa-transform="rotate-45">〜</small>
-              </div>
+<div class="card card-image align-items-center" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');">
+    <div class=" card-title pt-2 text-center align-items-center" style="color:white">
+          <h5> Welcome to </h5>
+          <h3><strong>Guess Your Cards</strong></h3>
+          <div></br></br></div>
+            <div>
+              <a class="btn btn-light" id="btnStart" onclick="start()"> Press to star 🎙️</a>
             </div>
-
-
-          </div>
-
-            <p>I'm going to test you for extra sensory power. The other side of this card is a circle, plus, waves, square, or star. Clear your mind. When you're ready, say the name out loud.</p>
-            <a class="btn btn-light"><i class="far fa-clone left"></i> click to talk 🎙️ </a>
-
       </div>
-  </div>
-  <!-- Content -->
-    
-</div>
-<!-- Card -->
-      
-          <!-- Optional JavaScript -->
-        <!-- Popper.js first, then Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-        <script src="script.js"></script>       
-
+    <!-- Content -->
+    <div class="text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+      <div>
+          <div class="card-group text-black">
+              <div class="card">
+                <div class="card-body text-center align-items-center" style ="height:11rem" >            
+                  <div id="display">
+                    <div class="icon"></div>  
+                    </div>
+                  </div>  
+                </div>         
+            </div>
+            </br>
+            </br>
+            <div>
+          <div>
+            <form class="container">
+            <label style ="color : white">Correct</label>
+            <p id="correctCount" style ="color : white"><span></span></p>
+            </br>
+            <label style ="color : white">-Total-</label>  
+            <p id="totalCount" style ="color : white"><span></span></p>
+            </form> 
+           </div>
+        </div>
+  </div>    
   </body>
 
 </html>
